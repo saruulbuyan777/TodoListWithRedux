@@ -19,8 +19,8 @@ function App() {
       setInputvalue("");
       return setItems([...items,
         {
-          value: inputvalue,
-          isCompleted: false
+          value: inputvalue
+          
         }
    
    ])
@@ -31,18 +31,7 @@ function App() {
   
   }
   
-      
-  //  function handleDelete(e){
-  //    const id = Number(e.target.id);
-
-  //    const filteredArray = items.filter((item,index) => {
-  //      return index !== id;
-      
-       
-  //    });
-  //    setItems(filteredArray);
-  //  }
-
+  
 
   return (
     <StyledContainer>
@@ -68,8 +57,8 @@ function App() {
                  
                  
                  key = {id}>
-                   <li id = {id} style = {item.isCompleted ? {textDecoration: "line-through"}: {textDecoration: "none"}}>{item.value}</li>
-                   <FaTrashAlt  />
+                   <li id = {id} >{item.value}</li>
+                   <FaTrashAlt onClick = {deleteBtn} />
                  </div>
 
               )

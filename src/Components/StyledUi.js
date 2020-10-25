@@ -7,6 +7,7 @@ const StyledUi =styled.ul`
 
 
      li {
+
        text-align:left;
        margin:10px 0;
        font-size:1.4rem;
@@ -14,6 +15,7 @@ const StyledUi =styled.ul`
        /* list-style-type:none; */
        color:coral;
      }
+    
 `;
 
 export default StyledUi
