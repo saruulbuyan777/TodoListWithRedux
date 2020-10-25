@@ -58,7 +58,7 @@ function App() {
                  
                  key = {id}>
                    <li id = {id} >{item.value}</li>
-                   <FaTrashAlt onClick = {deleteBtn} />
+                   <FaTrashAlt />
                  </div>
 
               )
